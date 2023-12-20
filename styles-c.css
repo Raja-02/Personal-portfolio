@@ -148,3 +148,22 @@ form .btn3 {
   display: block;
   margin-top: 20px;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
+
+/* Global styles that apply to all screen sizes */
+
+/* Media query for screens with a maximum width of 600px or less */
+@media only screen and (max-width: 600px) {
+  .contact-left p i {
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 20px;
+  }
+  form .btn3 {
+    padding: 15px 30px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+}
