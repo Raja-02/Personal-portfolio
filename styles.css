@@ -1,50 +1,3 @@
-/* Importing the font outside the media query, assuming it applies to all screen sizes */
-@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
-
-/* Global styles that apply to all screen sizes */
-
-/* Media query for screens with a maximum width of 600px or less */
-@media only screen and (max-width: 600px) {
-  .header-text h1 {
-    font-size: 30px;
-    font-weight: 500;
-    color: #fff;
-    border-right: 4px solid #000;
-    animation: cursor 1s infinite step-end, typing 15s infinite steps(16);
-    white-space: nowrap;
-    overflow: hidden;
-    margin-top: 20%; /* Adjusted the margin to be within the media query */
-  }
-
-  @keyframes cursor {
-    0%,
-    100% {
-      border-color: transparent;
-    }
-    50% {
-      border-color: #000;
-    }
-  }
-
-  @keyframes typing {
-    0% {
-      width: 0ch;
-    }
-    30% {
-      width: 20ch;
-    }
-    80% {
-      width: 20ch;
-    }
-    100% {
-      width: 0ch;
-    }
-  }
-
-  .header-text h1 span {
-    color: #ff004f;
-  }
-}
 
 * {
   margin: 0;
@@ -140,4 +93,52 @@ nav ul li a:hover::after {
 }
 .header-text h1 span {
   color: #ff004f;
+}
+
+/* Importing the font outside the media query, assuming it applies to all screen sizes */
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
+
+/* Global styles that apply to all screen sizes */
+
+/* Media query for screens with a maximum width of 600px or less */
+@media only screen and (max-width: 600px) {
+  .header-text h1 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+    border-right: 4px solid #000;
+    animation: cursor 1s infinite step-end, typing 15s infinite steps(16);
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 20%; /* Adjusted the margin to be within the media query */
+  }
+
+  @keyframes cursor {
+    0%,
+    100% {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #000;
+    }
+  }
+
+  @keyframes typing {
+    0% {
+      width: 0ch;
+    }
+    30% {
+      width: 20ch;
+    }
+    80% {
+      width: 20ch;
+    }
+    100% {
+      width: 0ch;
+    }
+  }
+
+  .header-text h1 span {
+    color: #ff004f;
+  }
 }
